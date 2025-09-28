@@ -1,10 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  webpack: (config) => {
-    config.externals.push("pino-pretty", "lokijs", "encoding");
-    return config;
+  async redirects() {
+    return [
+      {
+        source: "/.well-known/farcaster.json",
+        destination:
+          "https://api.farcaster.xyz/miniapps/hosted-manifest/01998ea6-d266-b2d7-a776-f7f87e5e5815",
+        permanent: false,
+      },
+    ];
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
