@@ -15,13 +15,13 @@ export const minikitConfig = {
     signature: "MHg1YjBlZGNmNmVmODRkNjQzOTY1NjdiOTk5YzVhYmU5MGY5YTBjMTUxNGQzZTI4YzBhNzdhMjcwYWUzN2QzMzllMzYzYjZhNTM1MmE2ZWE3NzZmMmM1MjBiN2Y3ZDJmMDU5MTM3NWIwNzgxNTBlMjM0OWZhODQxMjg2MDgyMGFiYzFj",
   },
   baseBuilder: {
-    allowedAddresses: [],
+    allowedAddresses: ["0x53627cb5315A3bfDdC238cce1C719D90bA5E87Ee"],
   },
   miniapp: {
     version: "1",
     name: "my-minikit-app",
-    subtitle: "",
-    description: "",
+    subtitle: "Indonesia",
+    description: "Aloha",
     screenshotUrls: [],
     iconUrl: `${ROOT_URL}/icon.png`,
     splashImageUrl: `${ROOT_URL}/splash.png`,
